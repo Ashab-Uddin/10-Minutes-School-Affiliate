@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --red: #EB2026;
+  --red-dark: #C41E1E;
+  --blue: #1E63D6;
+  --emerald: #10B981;
+  --ink: #0F172A;
+}
+
+body {
+  font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+  background: radial-gradient(circle, rgba(226, 43, 43, 0.08) 1.6px, transparent 1.6px) 0px 0px / 26px 26px, #FFFFFF;
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.capsule-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.capsule-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.glow-orange-ring {
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.85), 0 10px 25px -5px rgba(249, 115, 22, 0.4);
+}
+.glow-cyan-ring {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.8), 0 10px 25px -5px rgba(14, 165, 233, 0.35);
+}
+
+.course-card-pro {
+  background: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+.course-card-pro:hover {
+  transform: translateY(-5px);
+  border-color: rgba(235, 32, 38, 0.35);
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1E63D6 0%, #104AB2 100%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.btn-shine:hover {
+  background: linear-gradient(135deg, #EB2026 0%, #C41E1E 100%);
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: rotate(30deg);
+  transition: transform 0.5s ease;
+}
+.course-card-pro:hover .btn-shine::after {
+  transform: translateX(450%) rotate(30deg);
+}
+
+.scroll-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.scroll-row::-webkit-scrollbar {
+  display: none;
+}
+.scroll-row > div {
+  flex: 0 0 310px;
+  scroll-snap-align: start;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+

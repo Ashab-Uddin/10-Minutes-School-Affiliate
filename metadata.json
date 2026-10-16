@@ -1,0 +1,6 @@
+{
+  "name": "10 Minute School Affiliate Course Portal",
+  "description": "Dynamic affiliate educational course portal and admin management dashboard for 10 Minute School online batches, skills, and admission courses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,185 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build app",
+			"type": "shell",
+			"command": "cd /d \"d:\\10-minute-school-affiliate-course-portal (1)\" && npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build app 2",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install dependencies",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && npm install",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install dependencies fixed",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && npm install",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run build",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check node_modules",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && pwd && ls && ls node_modules/.bin 2>/dev/null | head",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "List node_modules",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ls -la node_modules | sed -n '1,80p'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "List bin",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ls -la node_modules/.bin && ls -l node_modules/vite/bin 2>/dev/null || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run vite directly",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ./node_modules/.bin/vite build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run typecheck",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ./node_modules/.bin/tsc --noEmit",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Typecheck after fix",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ./node_modules/.bin/tsc --noEmit",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run web app",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && npm run dev",
+			"args": [],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check app HTTP",
+			"type": "shell",
+			"command": "curl -I http://localhost:3000",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run app on free port",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && PORT=4321 npm run dev",
+			"args": [],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check app on port 4321",
+			"type": "shell",
+			"command": "curl -I http://localhost:4321",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Verify after fallback patch",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ./node_modules/.bin/tsc --noEmit",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "TS check",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && ./node_modules/.bin/tsc --noEmit",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check JSON API",
+			"type": "shell",
+			"command": "curl -s http://localhost:4321/api/public/data",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run web app on 4322",
+			"type": "shell",
+			"command": "cd '/d/10-minute-school-affiliate-course-portal (1)' && PORT=4322 npm run dev",
+			"args": [],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check page on 4322",
+			"type": "shell",
+			"command": "curl -I http://localhost:4322",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
